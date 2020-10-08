@@ -53,6 +53,10 @@ public class ContactProgram {
                         //  input.nextLine();
                         break;
                     case FIND_CONTACT:
+                        Scanner input = new Scanner(System.in);
+                        System.out.println("Please enter name of contact: ");
+                        String name = input.nextLine();
+                        findContact(name);
                         break;
                     case REMOVE_CONTACT:
 
@@ -109,6 +113,18 @@ public class ContactProgram {
             System.out.println(contacts);
         }
 
+    }
+    public void findContact(String name) {
+        for (Contact c : contacts) {
+            if (c.getName().toLowerCase().contains(name.toLowerCase())) {
+                c.showInfo();
+
+                Scanner input = new Scanner(System.in);
+                System.out.println("Press Enter to continue");
+                input.nextLine();
+
+            }
+        }
     }
 
 }
