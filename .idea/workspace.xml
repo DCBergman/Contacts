@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9bdf0b4-d858-4c74-9e0f-7f7f52e5ae15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/files/contacts.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/CreateContactForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/CreateContactForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/FindContact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/RemoveContact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contacts/files/contacts.ser" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/files/contacts.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/ContactProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ContactProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ViewContacts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/FindContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RemoveContact.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

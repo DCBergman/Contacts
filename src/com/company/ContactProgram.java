@@ -44,16 +44,15 @@ public class ContactProgram {
                         }
                         break;
                     case VIEW_CONTACTS_BY_CAT:
-                        //    System.out.println("-------------\n");
-                        //   for (Customer c : customers) {
-                        //       System.out.println(c.getName() + " is attending " + c.getClassAttending());
-                        //   }
-                        //   input = new Scanner(System.in);
+                        Scanner input = new Scanner(System.in);
+                        System.out.println("Please contact category: ");
+                        String contactCategory = input.nextLine();
+                        viewContactsByCat(contactCategory);
                         System.out.println("\nPress Enter to continue");
-                        //  input.nextLine();
+                        input.nextLine();
                         break;
                     case FIND_CONTACT:
-                        Scanner input = new Scanner(System.in);
+                        input = new Scanner(System.in);
                         System.out.println("Please enter name of contact: ");
                         String name = input.nextLine();
                         findContact(name);
@@ -145,6 +144,19 @@ public class ContactProgram {
         Scanner input = new Scanner(System.in);
         System.out.println("Press Enter to continue");
         input.nextLine();
+    }
+    public void viewContactsByCat(String contactCat){
+        int i =0;
+        for (Contact c: contacts) {
+            if(c.toString().toLowerCase().contains(contactCat.toLowerCase())){
+                c.showInfo();
+                i++;
+            }
+        }
+        if(i == 0 ){
+            System.out.println("You have no contacts of that type in your list.");
+        }
+
     }
 
 }
