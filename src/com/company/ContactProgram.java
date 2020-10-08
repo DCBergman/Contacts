@@ -119,7 +119,10 @@ public class ContactProgram {
         if (contact != null) {
             contacts.add(contact);
             FileUtility.saveObject("src/files/contacts.ser", contacts, StandardOpenOption.CREATE);
-            System.out.println(contacts);
+            System.out.println(contact.getName() + " has been added. \nPlease press enter to continue. ");
+            Scanner input = new Scanner(System.in);
+            System.out.println("Press Enter to continue");
+            input.nextLine();
         }
 
     }

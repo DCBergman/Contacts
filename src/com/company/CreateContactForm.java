@@ -31,7 +31,7 @@ public class CreateContactForm {
         return role;
     }
     public String getCompany(){
-        System.out.print("Name: ");
+        System.out.print("Company: ");
         String company = scanner.nextLine();
         return company;
     }
