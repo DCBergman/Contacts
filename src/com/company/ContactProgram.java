@@ -59,7 +59,16 @@ public class ContactProgram {
                         findContact(name);
                         break;
                     case REMOVE_CONTACT:
-
+                        int i = 1;
+                        System.out.println("Please enter the number of the contact you wish to remove. \n" +
+                                "--------------------------\n");
+                        for (Contact c : contacts) {
+                            System.out.println(i + ". " + c.getName() + " " + c.getPhoneNumber());
+                            i++;
+                        }
+                        input = new Scanner(System.in);
+                        int index = input.nextInt() - 1;
+                        removeContact(index);
                         break;
                     case QUIT:
                         FileUtility.saveObject("src/files/contacts.ser", contacts);
@@ -125,6 +134,14 @@ public class ContactProgram {
 
             }
         }
+    }
+    public void removeContact(int index){
+        String name = contacts.get(index).getName();
+        contacts.remove(index);
+        System.out.println(name + " has been removed from your contacts.");
+        Scanner input = new Scanner(System.in);
+        System.out.println("Press Enter to continue");
+        input.nextLine();
     }
 
 }
