@@ -13,11 +13,11 @@ public class ContactFactory {
         System.out.println("Please enter contact info \n -------------");
         switch (contactType) {
             case FRIEND:
-                return new FriendContact("janina", "0738483838", "Cromwell Road");
+                return new FriendContact(cf.getName(), cf.getPhoneNumber(), cf.getAddress());
             case FAMILY:
-                return new FamilyContact("Ebba", "0743858483", "Sister");
+                return new FamilyContact(cf.getName(), cf.getPhoneNumber(), cf.getRelationship());
             case BUSINESS:
-                return new BusinessContact("Anders", "0734829389", "Translator", "Company");
+                return new BusinessContact(cf.getName(), cf.getPhoneNumber(), cf.getRole(), cf.getCompany());
             default:
                 Menu.getInstance().showErrorMessage("Could not create contact of type: " + contactType.toString());
                 return null;
