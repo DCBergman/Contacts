@@ -26,7 +26,7 @@ public class CreateContactForm {
         return relationship;
     }
     public String getRole(){
-        System.out.print("Role: ");
+        System.out.print("Profession: ");
         String role = scanner.nextLine();
         return role;
     }

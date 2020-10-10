@@ -174,7 +174,7 @@ public class ContactProgram {
             }
         }
         if(info == "Role"){
-            System.out.println("Role: ");
+            System.out.println("Profession: ");
             String role = input.nextLine();
             decoratedContact = new RoleDecorator(new InfoDecorator(contact), role);
             if (decoratedContact != null) {

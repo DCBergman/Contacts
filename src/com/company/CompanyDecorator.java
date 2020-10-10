@@ -2,7 +2,7 @@ package com.company;
 
 import java.io.Serializable;
 
-public class CompanyDecorator extends InfoDecorator implements Serializable{
+public class CompanyDecorator extends InfoDecorator{
     private String company;
     public CompanyDecorator(Contact c, String company) {
         super(c);

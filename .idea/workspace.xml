@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9bdf0b4-d858-4c74-9e0f-7f7f52e5ae15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/AddressDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/CompanyDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/EditContactMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/InfoDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/RelationshipDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/RoleDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/BusinessContact.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/BusinessContact.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/Contact.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/FamilyContact.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/FamilyContact.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/FriendContact.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/FriendContact.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/Menu$MenuItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/Menu$MenuItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/ViewContactsByCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/CompanyDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/CompanyDecorator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Contacts/files/contacts.ser" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/files/contacts.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/BusinessContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/BusinessContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ContactProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ContactProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/FamilyContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FamilyContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/FriendContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FriendContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ViewContactsByCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/CompanyDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CompanyDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/files/contacts.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/contacts.ser" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
