@@ -21,6 +21,7 @@ public class Menu {
         VIEW_CONTACTS("View your contacts"),
         VIEW_CONTACTS_BY_CAT("View contacts by category"),
         FIND_CONTACT("Find a contact"),
+        EDIT_CONTACT("Add info to contact"),
         REMOVE_CONTACT("Remove a contact"),
         QUIT("Quit the program");
 

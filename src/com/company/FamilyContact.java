@@ -1,18 +1,28 @@
 package com.company;
 
-public class FamilyContact extends Contact{
+import java.io.Serializable;
+
+public class FamilyContact extends Contact {
+    private String name;
+    private String phoneNumber;
     private String relationship;
-
     public FamilyContact(String name, String phoneNumber, String relationship) {
-        super(name, phoneNumber);
-        this.relationship = relationship;
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.relationship= relationship;
+    }
+    @Override
+    public String getName() {
+        return name;
     }
 
-    public String getRelationship() {
-        return relationship;
+    @Override
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
-    public void showInfo(){
-        System.out.println("----------\n" + getName()+ "\n"+ "Phone number: " + getPhoneNumber() + "\n" + "Relation: " + getRelationship());
 
+    @Override
+    public void showInfo() {
+        System.out.println("\n" + name + "\n" + phoneNumber + "\n" + relationship );
     }
 }

@@ -1,18 +1,29 @@
 package com.company;
 
-public class FriendContact extends Contact {
+import java.io.Serializable;
 
+public class FriendContact extends Contact{
+    private String name;
+    private String phoneNumber;
     private String address;
     public FriendContact(String name, String phoneNumber, String address) {
-        super(name, phoneNumber);
+        this.name = name;
+        this.phoneNumber = phoneNumber;
         this.address = address;
     }
 
-    public String getAddress() {
-        return address;
+    @Override
+    public String getName() {
+        return name;
     }
-    public void showInfo(){
-        System.out.println("----------\n" + getName()+ "\n"+ "Phone number: " + getPhoneNumber() + "\n" + "Address: " + getAddress());
 
+    @Override
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    @Override
+    public void showInfo() {
+        System.out.println("\n" + name + "\n" + phoneNumber + "\n" + address );
     }
 }

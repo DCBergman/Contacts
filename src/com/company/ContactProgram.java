@@ -1,5 +1,6 @@
 package com.company;
 
+import javax.management.relation.Role;
 import java.beans.Customizer;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -42,9 +43,12 @@ public class ContactProgram {
                         for (Contact c : contacts ) {
                             c.showInfo();
                         }
+                        Scanner input = new Scanner(System.in);
+                        System.out.println("\nPress Enter to continue");
+                        input.nextLine();
                         break;
                     case VIEW_CONTACTS_BY_CAT:
-                        Scanner input = new Scanner(System.in);
+                        input = new Scanner(System.in);
                         System.out.println("Please contact category: ");
                         String contactCategory = input.nextLine();
                         viewContactsByCat(contactCategory);
@@ -53,12 +57,25 @@ public class ContactProgram {
                         break;
                     case FIND_CONTACT:
                         input = new Scanner(System.in);
-                        System.out.println("Please enter name of contact: ");
+                        System.out.println("\nPlease enter name of contact: ");
                         String name = input.nextLine();
                         findContact(name);
                         break;
-                    case REMOVE_CONTACT:
+                    case EDIT_CONTACT:
                         int i = 1;
+                        System.out.println("Please enter the number of the contact you wish to edit. \n" +
+                                "--------------------------\n");
+                        for (Contact c : contacts ) {
+                            System.out.println(i + ". " + c.getName());
+                            i++;
+                        }
+                        input = new Scanner(System.in);
+                        int contactIndex = input.nextInt() - 1;
+                        String infoType = EditContactMenu.getInstance().showMenuAndGetChoice();
+                        editContact(contactIndex, infoType);
+                        break;
+                    case REMOVE_CONTACT:
+                         i = 1;
                         System.out.println("Please enter the number of the contact you wish to remove. \n" +
                                 "--------------------------\n");
                         for (Contact c : contacts) {
@@ -120,7 +137,6 @@ public class ContactProgram {
             FileUtility.saveObject("src/files/contacts.ser", contacts, StandardOpenOption.CREATE);
             System.out.println(contact.getName() + " has been added. \nPlease press enter to continue. ");
             Scanner input = new Scanner(System.in);
-            System.out.println("Press Enter to continue");
             input.nextLine();
         }
 
@@ -136,6 +152,47 @@ public class ContactProgram {
 
             }
         }
+    }
+    public void editContact(int index, String info){
+        Scanner input = new Scanner(System.in);
+       Contact contact = contacts.get(index);
+       Contact decoratedContact;
+        if(info == "Address"){
+            System.out.println("Address: ");
+             String address = input.nextLine();
+            decoratedContact = new AddressDecorator(new InfoDecorator(contact), address);
+            if (decoratedContact != null) {
+                contacts.set(index, decoratedContact);
+            }
+        }
+        if(info == "Relationship"){
+            System.out.println("Relationship: ");
+            String relationship = input.nextLine();
+            decoratedContact = new RelationshipDecorator(new InfoDecorator(contact), relationship);
+            if (decoratedContact != null) {
+                contacts.set(index, decoratedContact);
+            }
+        }
+        if(info == "Role"){
+            System.out.println("Role: ");
+            String role = input.nextLine();
+            decoratedContact = new RoleDecorator(new InfoDecorator(contact), role);
+            if (decoratedContact != null) {
+                contacts.set(index, decoratedContact);
+            }
+        }
+        if(info == "Company"){
+            System.out.println("Company: ");
+            String company = input.nextLine();
+            decoratedContact = new CompanyDecorator(new InfoDecorator(contact), company);
+            if (decoratedContact != null) {
+                contacts.set(index, decoratedContact);
+            }
+        }
+            FileUtility.saveObject("src/files/contacts.ser", contacts, StandardOpenOption.CREATE);
+            System.out.println(contact.getName() + " has been updated. \nPlease press enter to continue. ");
+            input = new Scanner(System.in);
+            input.nextLine();
     }
     public void removeContact(int index){
         String name = contacts.get(index).getName();
