@@ -1,13 +1,7 @@
 package com.company;
 
-import javax.management.relation.Role;
-import java.beans.Customizer;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.ObjectInputStream;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class ContactProgram {
@@ -51,7 +45,7 @@ public class ContactProgram {
                         input = new Scanner(System.in);
                         System.out.println("Please contact category: ");
                         String contactCategory = input.nextLine();
-                        viewContactsByCat(contactCategory);
+                        viewContactsByCategory(contactCategory);
                         System.out.println("\nPress Enter to continue");
                         input.nextLine();
                         break;
@@ -100,28 +94,13 @@ public class ContactProgram {
         } while (choice != Menu.MenuItem.QUIT);
 
     }
-    public static List<Contact> readObjects(String fileName) {
-        ObjectInputStream objectinputstream = null;
-        List<Contact> contactsList = null;
-        try {
-            FileInputStream streamIn = new FileInputStream(fileName);
-            objectinputstream = new ObjectInputStream(streamIn);
-            contactsList= (List<Contact>) objectinputstream.readObject();
-            objectinputstream.close();
-        } catch (FileNotFoundException e){
-            System.out.println("File does not exist in filepath");
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-        contactsList.get(0).getName();
-        return contactsList;
-    }
+
 
     public void addExistingContacts() {
         String fileName = "src/files/contacts.ser";
         try{
-            for (Contact c : readObjects(fileName)) {
+            for (Contact c : FileUtility.readObjects(fileName)
+            ) {
                 contacts.add(c);
             }
         }catch(NullPointerException e){
@@ -202,10 +181,10 @@ public class ContactProgram {
         System.out.println("Press Enter to continue");
         input.nextLine();
     }
-    public void viewContactsByCat(String contactCat){
+    public void viewContactsByCategory(String contactCategory){
         int i =0;
         for (Contact c: contacts) {
-            if(c.toString().toLowerCase().contains(contactCat.toLowerCase())){
+            if(c.toString().toLowerCase().contains(contactCategory.toLowerCase())){
                 c.showInfo();
                 i++;
             }

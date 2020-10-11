@@ -1,7 +1,5 @@
 package com.company;
 
-import java.io.Serializable;
-
 public class InfoDecorator extends Contact {
 
     protected Contact contact;

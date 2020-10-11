@@ -1,7 +1,5 @@
 package com.company;
 
-import java.io.Serializable;
-
 public class RoleDecorator extends InfoDecorator {
     private String role;
     public RoleDecorator(Contact c, String role) {

@@ -1,5 +1,7 @@
 package com.company;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.nio.file.Files;
@@ -19,34 +21,22 @@ public class FileUtility {
             e.printStackTrace();
         }
     }
-
-    public static Object loadObject(String filename) {
-        Path path = Paths.get(filename);
-        try (ObjectInputStream in = new ObjectInputStream(Files.newInputStream(path))) {
-            return in.readObject();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    public static void saveText(String filename, List<String> list, StandardOpenOption... option) {
-        Path path = Paths.get(filename);
+    public static List<Contact> readObjects(String fileName) {
+        ObjectInputStream objectinputstream = null;
+        List<Contact> contactsList = null;
         try {
-            Files.write(path, list, option);
-        } catch (Exception e) {
+            FileInputStream streamIn = new FileInputStream(fileName);
+            objectinputstream = new ObjectInputStream(streamIn);
+            contactsList= (List<Contact>) objectinputstream.readObject();
+            objectinputstream.close();
+        } catch (FileNotFoundException e){
+            System.out.println("File does not exist in filepath");
+        }
+        catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public static List<String> loadText(String filename) {
-        Path path = Paths.get(filename);
-        try {
-            return Files.readAllLines(path);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+        contactsList.get(0).getName();
+        return contactsList;
     }
 }
 

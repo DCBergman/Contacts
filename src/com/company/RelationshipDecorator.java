@@ -1,7 +1,5 @@
 package com.company;
 
-import java.io.Serializable;
-
 public class RelationshipDecorator extends InfoDecorator {
     private String relationship;
     public RelationshipDecorator(Contact c, String relationship) {

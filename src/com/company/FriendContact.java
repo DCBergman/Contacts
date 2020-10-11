@@ -1,7 +1,5 @@
 package com.company;
 
-import java.io.Serializable;
-
 public class FriendContact extends Contact{
     private String name;
     private String phoneNumber;
