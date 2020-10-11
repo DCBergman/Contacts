@@ -18,11 +18,10 @@ public class EditContactMenu {
     public String showMenuAndGetChoice() {
 
         System.out.println("\nPlease select the information you wish to add:  \n----------");
-
-        String[] infoTypes ={"Address", "Relationship", "Role", "Company"};
+        String[] infoTypes ={"Address", "Relationship", "Profession", "Company"};
         int i = 1;
-        for (String contactType: infoTypes) {
-            System.out.println(i + ". " + contactType);
+        for (String infoType: infoTypes) {
+            System.out.println(i + ". " + infoType);
             i++;
         }
         Scanner scanner = new Scanner(System.in);

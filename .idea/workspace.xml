@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e9bdf0b4-d858-4c74-9e0f-7f7f52e5ae15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/CompanyDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/CompanyDecorator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/CreateContactForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/CreateContactForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/EditContactMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/EditContactMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Contacts/files/contacts.ser" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/files/contacts.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CompanyDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CompanyDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/EditContactMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/EditContactMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/files/contacts.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/contacts.ser" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
