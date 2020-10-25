@@ -3,24 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e9bdf0b4-d858-4c74-9e0f-7f7f52e5ae15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/ContactProgram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/EditContactMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/EditContactMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/com/company/FileUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/com/company/FileUtility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Contacts/files/contacts.ser" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contacts/files/contacts.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ContactProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ContactProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/FileUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FileUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/FriendContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FriendContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/InfoDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/InfoDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/RelationshipDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RelationshipDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/RoleDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RoleDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/contacts.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/contacts.ser" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Contacts" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,6 +27,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -84,7 +76,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
